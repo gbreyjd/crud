@@ -1,0 +1,216 @@
+/* Обнуляем стандартные стили для элементов */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Стандартные стили для тела (body) */
+body {
+  line-height: 1;
+}
+
+/* Убираем стили у списков */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Убираем стили у встроенных ссылок (a) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Делаем изображения максимально адаптивными */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Добавляем базовые шрифты */
+body {
+  background-color: #232c38;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Другие стили и сбросы по вашему усмотрению */
+
+.header__main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24292f;
+  padding: 20px 10px;
+}
+
+.header__ul {
+  display: flex;
+}
+
+.header__li {
+}
+
+.header__li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__btn {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  background-color: #24292f;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Основные стили для прозрачной таблицы на темном фоне */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: #fff; /* Цвет текста в таблице на темном фоне */
+  }
+  
+  /* Заголовок таблицы */
+  thead {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+  }
+  
+  thead th {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd; /* Линия под заголовком таблицы */
+  }
+  
+  /* Строки таблицы */
+  tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для четных строк */
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Более темный фон при наведении */
+  }
+  
+  /* Ячейки таблицы */
+  td, th {
+    padding: 10px;
+  }
+  
+  /* Добавление отступов между ячейками */
+  td {
+    padding: 10px 15px;
+  }
+  
+  /* Применение стиля для ссылок в ячейках */
+  td a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+  }
